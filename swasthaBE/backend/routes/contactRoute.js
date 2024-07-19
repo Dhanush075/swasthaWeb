@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const Contact = require("../models/contact");
 const SibApiV3Sdk = require("sib-api-v3-sdk");
+require('dotenv').config();
 
 // Initialize the Sendinblue API client
 const defaultClient = SibApiV3Sdk.ApiClient.instance;
